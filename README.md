@@ -26,7 +26,7 @@ This is a personal HTML-based timetable page created to easily view and manage m
 
 ## 📷 Preview
 
-> *(Add screenshot here if needed later)*
+> Go to link and check
 
 ---
 
