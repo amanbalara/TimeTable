@@ -6,25 +6,42 @@
   <title>Group 32 – IIT Delhi Weekly Timetable (Semester 2)</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f6f7fb;
       margin: 0;
       padding: 20px;
+      color: #1a1a1a;
     }
 
     h1 {
       text-align: center;
-      color: #1a1a1a;
+      margin-bottom: 30px;
+    }
+
+    a {
+      color: #0057cc;
+      text-decoration: underline;
+    }
+
+    /* ===== Cards ===== */
+    .day,
+    .notice,
+    .links {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 16px;
+      background: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
 
     .day {
-      background: #fff;
       border-left: 5px solid #0077cc;
-      padding: 15px;
-      margin: 20px auto;
-      max-width: 700px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
     .day h2 {
@@ -33,43 +50,46 @@
     }
 
     .slot {
-      background-color: #e8f4ff;
+      background-color: #eef5ff;
       margin: 10px 0;
-      padding: 10px;
+      padding: 10px 12px;
       border-left: 4px solid #00bcd4;
+      border-radius: 4px;
     }
 
     .slot p {
-      margin: 5px 0;
+      margin: 4px 0;
     }
 
+    /* ===== Notices ===== */
     .notice {
-      max-width: 700px;
-      margin: 20px auto;
       background: #fff8dc;
       border-left: 5px solid #ffa500;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
       font-size: 0.95rem;
     }
 
+    /* ===== Links ===== */
     .links {
-      max-width: 700px;
-      margin: 40px auto;
       background: #f0f8ff;
       border-left: 5px solid #0077cc;
-      padding: 15px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
+    .links ul {
+      margin: 0;
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    /* ===== Footer ===== */
     footer {
       text-align: center;
       padding: 20px;
       background: #0077cc;
-      color: #fff;
+      color: #ffffff;
       margin-top: 40px;
     }
 
+    /* ===== Instagram Badge ===== */
     .insta-badge {
       position: fixed;
       bottom: 20px;
@@ -78,15 +98,26 @@
       width: 48px;
       height: 48px;
       border-radius: 50%;
-      background: white;
+      background: #ffffff;
       padding: 6px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
     }
 
     .insta-badge img {
       width: 100%;
       height: 100%;
       border-radius: 50%;
+    }
+
+    .insta-badge:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 14px;
+      }
     }
   </style>
 </head>
@@ -107,106 +138,42 @@
 <!-- MONDAY -->
 <div class="day">
   <h2>Monday</h2>
-
-  <div class="slot">
-    <p><strong>MEL1002</strong></p>
-    <p>08:00 – 09:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>CMP1000 (Lab)</strong></p>
-    <p>13:00 – 17:00 @ LH</p>
-  </div>
+  <div class="slot"><p><strong>MEL1002</strong></p><p>08:00 – 09:00 @ LH</p></div>
+  <div class="slot"><p><strong>CMP1000 (Lab)</strong></p><p>13:00 – 17:00 @ LH</p></div>
 </div>
 
 <!-- TUESDAY -->
 <div class="day">
   <h2>Tuesday</h2>
-
-  <div class="slot">
-    <p><strong>CML1001</strong></p>
-    <p>08:00 – 09:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>MTL1002</strong></p>
-    <p>11:00 – 12:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>MTL1002 (Tutorial)</strong></p>
-    <p>13:00 – 14:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>MEL1002</strong></p>
-    <p>15:00 – 16:00 @ LH</p>
-  </div>
+  <div class="slot"><p><strong>CML1001</strong></p><p>08:00 – 09:00 @ LH</p></div>
+  <div class="slot"><p><strong>MTL1002</strong></p><p>11:00 – 12:00 @ LH</p></div>
+  <div class="slot"><p><strong>MTL1002 (Tutorial)</strong></p><p>13:00 – 14:00 @ LH</p></div>
+  <div class="slot"><p><strong>MEL1002</strong></p><p>15:00 – 16:00 @ LH</p></div>
 </div>
 
 <!-- WEDNESDAY -->
 <div class="day">
   <h2>Wednesday</h2>
-
-  <div class="slot">
-    <p><strong>CML1001</strong></p>
-    <p>08:00 – 09:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>MEL1002</strong></p>
-    <p>09:00 – 10:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>MTL1002</strong></p>
-    <p>11:00 – 12:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>MEP1000 (Lab)</strong></p>
-    <p>13:00 – 16:00 @ LH</p>
-  </div>
+  <div class="slot"><p><strong>CML1001</strong></p><p>08:00 – 09:00 @ LH</p></div>
+  <div class="slot"><p><strong>MEL1002</strong></p><p>09:00 – 10:00 @ LH</p></div>
+  <div class="slot"><p><strong>MTL1002</strong></p><p>11:00 – 12:00 @ LH</p></div>
+  <div class="slot"><p><strong>MEP1000 (Lab)</strong></p><p>13:00 – 16:00 @ LH</p></div>
 </div>
 
 <!-- THURSDAY -->
 <div class="day">
   <h2>Thursday</h2>
-
-  <div class="slot">
-    <p><strong>MEP1000 / 1</strong></p>
-    <p>08:00 – 09:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>CML1001</strong></p>
-    <p>11:00 – 12:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>Language Skills</strong></p>
-    <p>13:00 – 15:00 @ LH</p>
-  </div>
+  <div class="slot"><p><strong>MEP1000 / 1</strong></p><p>08:00 – 09:00 @ LH</p></div>
+  <div class="slot"><p><strong>CML1001</strong></p><p>11:00 – 12:00 @ LH</p></div>
+  <div class="slot"><p><strong>Language Skills</strong></p><p>13:00 – 15:00 @ LH</p></div>
 </div>
 
 <!-- FRIDAY -->
 <div class="day">
   <h2>Friday</h2>
-
-  <div class="slot">
-    <p><strong>MEL1002</strong></p>
-    <p>08:00 – 09:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>MTL1002</strong></p>
-    <p>11:00 – 12:00 @ LH</p>
-  </div>
-
-  <div class="slot">
-    <p><strong>MEP1001 (Lab)</strong></p>
-    <p>13:00 – 16:00 @ LH</p>
-  </div>
+  <div class="slot"><p><strong>MEL1002</strong></p><p>08:00 – 09:00 @ LH</p></div>
+  <div class="slot"><p><strong>MTL1002</strong></p><p>11:00 – 12:00 @ LH</p></div>
+  <div class="slot"><p><strong>MEP1001 (Lab)</strong></p><p>13:00 – 16:00 @ LH</p></div>
 </div>
 
 <div class="notice">
@@ -221,12 +188,14 @@
 <div class="links">
   <h3>🔗 Important Links</h3>
   <ul>
-    <li><a href="#">Moodle (Old)</a></li>
-    <li><a href="#">Moodle (New)</a></li>
-    <li><a href="#">IITD Webmail</a></li>
-    <li><a href="#">Acadly</a></li>
-    <li><a href="#">Gradescope</a></li>
-    <li><a href="#">IIT Delhi Official Website</a></li>
+    <li><a href="https://moodle.iitd.ac.in/" target="_blank">📚 Moodle (Old)</a></li>
+    <li><a href="https://moodlenew.iitd.ac.in/" target="_blank">📚 Moodle (New)</a></li>
+    <li><a href="https://webmail.iitd.ac.in/roundcube/" target="_blank">📧 IITD Webmail</a></li>
+    <li><a href="https://app.acadly.com/home" target="_blank">📅 Acadly</a></li>
+    <li><a href="https://www.gradescope.com/" target="_blank">📝 Gradescope</a></li>
+    <li><a href="https://chat.openai.com" target="_blank">🤖 ChatGPT</a></li>
+    <li><a href="https://csc.iitd.ac.in/howto" target="_blank">💻 CSC IITD How-To</a></li>
+    <li><a href="https://home.iitd.ac.in/" target="_blank">🏛️ IIT Delhi Official Website</a></li>
   </ul>
 </div>
 
